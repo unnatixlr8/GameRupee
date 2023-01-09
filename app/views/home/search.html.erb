@@ -1,6 +1,7 @@
 <p>Search comes here</p>
 
-<%= @categories %>
 
 <hr />
-<%= @response %>
+<% @response.each do |item| %>
+  <%= item["Payload"]["HighlightedResults"][0]["Title"] %>
+<% end %>
