@@ -3,5 +3,5 @@
 
 <hr />
 <% @response.each do |item| %>
-  <%= item["Payload"]["HighlightedResults"][0]["Title"] %>
+  <%= item["Payload"]["SearchResults"] %>
 <% end %>
